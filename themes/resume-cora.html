@@ -1,0 +1,551 @@
+
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Micah Madru</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		body {
+    font-family: Montserrat;
+    font-size:1em;
+    color: #333333;
+}
+
+.picture {
+    border-radius: 3%;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4e4e4e;
+}
+
+a:hover {
+    color: #4e4e4e;
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #4e4e4e;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.profile {
+    font-family: Montserrat;
+    white-space:nowrap;
+    margin: 0.5em;
+}
+
+.contact-header {
+    font-weight: bold;
+    color: #4e4e4e;
+    margin:1em;
+}
+
+.contact-header .fa {
+    font-size: 1.5em;
+}
+
+.profile .fa {
+    font-size: 1.5em;
+}
+
+.label {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.fa {
+    font-size: 2em;
+}
+
+.left {
+    font-size: 1em;
+}
+
+.main {
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+.skills {
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: &#x27;Open Sans&#x27;;
+}
+
+li {
+    font-family: &#x27;Open Sans&#x27;;
+}
+
+.keywords {
+    background-color: #333333;
+    color: #fff;
+    padding: 6px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+blockquote {
+    margin: 2em 10px;
+    padding: 1em 10px;
+    border-left: 10px solid #edf0f5;
+    font-family: &#x27;Open Sans&#x27;;
+    font-size: 1.5em;
+}
+
+blockquote .name {
+    font-weight: bold;
+    font-family: &quot;Montserrat&quot;;
+}
+
+.responsive-show {
+    display: none;
+}
+
+.address {
+    display: block
+}
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        font-size: 1.66em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 1.2em;
+    }
+    li {
+        font-size: 1.2em;
+    }
+    blockquote {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    .responsive-hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .responsive-show {
+        display: inline;
+        visibility: visible;
+    }
+}
+
+@media print {
+
+    body {
+        font-size:0.6em;
+    }
+
+    .address {
+        display: inline-block
+    }
+
+    .profile {
+        font-size: 1em;
+        display: inline-block
+    }
+
+    #profiles .contact-header {
+        display: none;
+    }
+
+    #languages,
+    #interests {
+        display: none;
+    }
+
+    section.skills section {
+        margin-right: 10em
+    }
+
+    .skills{
+        page-break-inside: avoid;
+    }
+
+    .main{
+        padding:10px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    section:not(#work) {
+        page-break-inside: avoid;
+    }
+
+    .job {
+        page-break-inside: avoid;
+    }
+
+    @page  
+    { 
+        size: auto;   /* auto is the initial value */ 
+        /* this affects the margin in the printer settings */ 
+        margin: 25mm 10mm;  
+    }
+}
+    </style>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://resume.micah.contact/favicon.ico">
+	</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEG8XX7H8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SEG8XX7H8R');
+</script>
+	<body>
+				<header>
+				<h1>Micah Madru</h1>
+				<h3 class= "label">Manager, Software Engineering</h3>
+		
+					<img src= "https://mjm128.github.io/live-resume/assets/avatar.png" class= "picture">
+		
+				<div id= "contact">
+					<span class= "contact-header">
+						<a href="https://maps.google.com/?q=Irvine, California, US"><i title="ADDRESS" class="fa fa-map-marker left"></i>&nbsp;Irvine, California, US</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "mailto:admin+resume@micahmadru.dev" target= "_blank"><i title="EMAIL" class="fa fa-envelope left"></i>&nbsp;admin+resume@micahmadru.dev</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "tel:(562) 242-6207" target= "_blank"><i title="PHONE" class="fa fa-phone-square left"></i>&nbsp;(562) 242-6207</a>
+					</span>
+					<br/><br/>
+				</div>
+				<br>
+				<div id= "profiles">
+					<span class= "profile"><a href= "https://linkedin.com/in/micahmadru" target= "_blank" class= "profile"><i class="fa fa-linkedin left"></i>&nbsp;micahmadru</a></span> 
+					<span class= "profile"><a href= "https://github.com/mjm128" target= "_blank" class= "profile"><i class="fa fa-github left"></i>&nbsp;mjm128</a></span> 
+				</div>		
+			</header>		<div class="main">
+			<section id="about">
+				<h2><i class="fa fa-user left"></i> ABOUT</h2>
+				<p>
+					Software Engineering Manager with 8+ years of experience designing and building scalable menu platform systems with real-world impact across 8,000+ restaurant locations. Expert in API integrations, legacy system migrations, and cross-functional technical leadership, delivering multi-million dollar business outcomes through strategic platform modernization initiatives.
+			
+				</p>
+			</section>
+			<section id= "work">
+				<h2><i class= "fa fa-suitcase left"></i> WORK EXPERIENCE</h2>
+					<div class= "job">
+						<h3>Product Implementation Lead - Menu, Yum! Brands</h3>
+						<h4>2025-Nov 			<span class="endDate">
+							- Present
+						</span>
+						</h4>
+						<p>Partners with brand, market, and platform teams to translate Byte Menu capabilities into scoped configurations, integrations, and launch-ready operating models for international rollouts.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Spearheading global implementation and adoption for the Byte Menu Management &amp; Portal across Yum! Brands&#x27; markets, defining onboarding best practices and serving as the key technical liaison to ensure seamless integrations and drive platform success.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Manager, Software Engineering, Taco Bell Corp.</h3>
+						<h4>2025-Feb 
+						<span class="endDate">
+							- 2025-Nov
+						</span>
+			</h4>
+						<p>Oversee Menu Management platform development across Taco Bell&#x27;s digital ecosystem, enabling Byte Platform integrations and coordinating cross-functional delivery of capabilities.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Built MPM Phase 1 technical foundation, designing **pilot implementation architecture, validation frameworks and risk mitigation systems** for EDM/Hybris-to-Byte Portal transition.</li>
+							<li>Provided technical **expertise on menu and order specifications** to cross-functional engineering teams, ensuring **consistent implementation** and **integration standards** across POS, Voice AI, digital channels, and middleware systems.</li>
+							<li>Ensured new functionality continuity during platform transitions, providing **technical guidance for Project Fresco** and managing **new experience requirements** while coordinating **multiple overlapping dependency projects** in parallel.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Assoc. Manager, Software Engineering, Taco Bell Corp.</h3>
+						<h4>2022-Sep 
+						<span class="endDate">
+							- 2025-Feb
+						</span>
+			</h4>
+						<p>Provided technical leadership for strategic platform modernization initiatives and enterprise architecture decisions across Taco Bell&#x27;s digital ecosystem.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Managed a team of 14 engineers (6 FTE, 8 contractors) specializing in **API integrations, data pipelines, and cloud infrastructure**, conducting weekly 1:1s and bi-annual performance reviews to drive individual growth and team alignment.</li>
+							<li>Architected Byte Portal migration strategy from legacy Hybris/EDM systems, defining technical roadmap with **GraphQL API integrations** for event-driven Pricing App and Product/Menu Master phases across **domestic US market**.</li>
+							<li>Delivered critical data integrations for **Annspire POS system rollout**, enabling menu generation and pricing updates across 8,000+ locations while supporting **legacy Xenial migration**.</li>
+							<li>Facilitated and coached cross-team migration from **legacy platform to event-driven cloud systems** for restaurant master data, implementing solutions while **developing team expertise in AWS stack** (Lambda, DynamoDB, API Gateway, EventBridge, Serverless Framework).</li>
+							<li>Supported the successful **national rollout of Touch Kitchen Display System (TKDS)** by delivering and validating **product data and Order Ready Engine (ORE) integrations**, enabling enhanced kitchen workflows and accurate order routing across **8,000+ Taco Bell locations**.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Sr. Software Engineer I, Taco Bell Corp.</h3>
+						<h4>2021-May 
+						<span class="endDate">
+							- 2022-Sep
+						</span>
+			</h4>
+						<p>Expanded organizational influence through mentoring, cross-team collaboration, and strategic partnerships.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Served as **technical liaison between operations and engineering teams**, translating franchise feedback into actionable enhancements for menu systems that aligned with the marketing experience calendar.</li>
+							<li>Mentored team member who delivered the **Next Generation POS Menu System** using **.NET/C# AWS Lambda** modernizing architecture across **7,500+ restaurants**.</li>
+							<li>Led consultant coordination and integration design for a **store hours modernization project** featuring **temporary scheduling capabilities**, identifying system gaps during **legacy-to-event-based architecture** migration.</li>
+							<li>Organized cross-team design sessions and knowledge-sharing, fostering collaboration and encouraging junior engineer participation to strengthen technical communication across the organization.</li>
+							<li>Established platform monitoring and alerting with **Lumigo** while **influencing PS/SRE support team expertise** through strategic partnership with team leads to improve operational support and incident response.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Software Engineer III, Taco Bell Corp.</h3>
+						<h4>2019-Nov 
+						<span class="endDate">
+							- 2021-May
+						</span>
+			</h4>
+						<p>Took on a technical lead role, architecting key solutions and overseeing a contractor team&#x27;s implementation and quality.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Acted as the **technical lead** for a team of up to 5 contractors, partnering with product owners to **translate ambiguous business goals** into **actionable architecture designs** and **detailed implementation plans**.</li>
+							<li>Directed the development workflow and **led code reviews** for the contractor team to enforce **engineering best practices** and **code quality**.</li>
+							<li>Spearheaded the technical integration of **new nationwide delivery platforms (DoorDash, Postmates, and Uber Eats)**, directly enabling a major corporate strategy that conrtibued to **a record-breaking 45% year-over-year increase in digital sales** in 2020.</li>
+							<li>Shipped a full-stack inventory availability application using **React, Python, SQL, and AWS services** that reduced help desk call volume and delivered **over $2 million in cost savings and revenue increase**.</li>
+							<li>Contributed to **Diablo serverless ETL framework** using **AWS (S3, Lambda, DynamoDB, SNS/SQS, and Step Functions)** to build highly scalable pipelines that **replaced costly Talend infrastructure**.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Systems Engineer II, Taco Bell Corp.</h3>
+						<h4>2018-Aug 
+						<span class="endDate">
+							- 2019-Nov
+						</span>
+			</h4>
+						<p>Developed and supported high-availability data systems to power the enterprise cloud migration and new digital commerce platforms.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Developed, maintained, and supported the data pipelines for the new **Menu Middleware (MMW) system** (the **single source of truth**) that powered the **Grubhub** and **Kiosk** platforms, contributing to **9% system-wide sales growth** and **over $250 million** in first-year digital sales.</li>
+							<li>Optimized the reliability and performance of the MMW data pipeline by resolving **Talend** job defects and tuning **AWS Lambda** (C#) code and configurations.</li>
+							<li>Engineered and supported the backend systems and APIs for the **Grubhub** integration project, ensuring reliable **menu distribution** and **order processing**.</li>
+							<li>Supported the expansion of **Kiosk 2.0** to include **alcohol ordering for the first time**, coordinating with **product stakeholders** while resolving critical integration issues.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Systems Engineer I, Taco Bell Corp.</h3>
+						<h4>2017-Oct 
+						<span class="endDate">
+							- 2018-Aug
+						</span>
+			</h4>
+						<p>Advanced FOH system performance and efficiency by championing L3 stability initiatives and developing key software solutions.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Designed and developed a **Selenium** automation tool using **Python**, **Pytest**, and the **Page Object Model (POM)** to automate payment device transfers, **reducing processing time by over 90%**.</li>
+							<li>Authored comprehensive training materials and technical documentation for kiosk system rollout, **conducting training sessions** and enabling standardized deployment to over 7,000+ stores nationwide.</li>
+							<li>Drove significant stability improvements across mission-critical FOH systems (**POS**, **Kiosk**, **Payment Systems**) by leading L3 initiatives in **root cause analysis**, **PVT**, and proactive **dashboard monitoring**.</li>
+							<li>Executed regular maintenance and updates to maintain system health and security across the FOH technology stack.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>IT Intern, Taco Bell Corp.</h3>
+						<h4>2017-Mar 
+						<span class="endDate">
+							- 2017-Oct
+						</span>
+			</h4>
+						<p>Drove key technology initiatives to improve system performance and reduce operational costs.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Independently architected and developed a **data pipeline** using **Python**, **AWS S3**, and **Athena** to collect and analyze storage drive health data from the Back of House (BOH) PCs of **over 6,500 restaurants** nationwide.</li>
+							<li>Reduced unnecessary drive replacements by **over 30%** and identified 40+ faulty drives that vendors were reintroducing into the field, prompting a process overhaul and improving diagnostic accuracy for service desk analysts.</li>
+							<li>Refactored the full-stack codebase (**Python**, **SQL**, **JavaScript**, **HTML/CSS**) for the Food Cost Analysis app (a menu pricing and profitability tool) on **AWS EC2**, resolving critical production issues to improve its stability for Operations</li>
+							<li>Delivered key code updates (bug fixes, security patches, and features) and built **software releases** to improve Back of House (BOH) system stability.</li>
+						</ul>
+					</div>
+			</section>
+			<section id="skills">
+				<h2><i class="fa fa-tasks left"></i> SKILLS</h2>
+				<section class="skills">
+				<section>
+				<h3 class="skills">Programming Languages</h3>
+				<span class="keywords">Python</span> 
+				<span class="keywords">C#</span> 
+				<span class="keywords">JavaScript</span> 
+				<span class="keywords">C++</span> 
+				<span class="keywords">SQL</span> 
+				</section>
+				<section>
+				<h3 class="skills">Cloud &amp; Infrastructure</h3>
+				<span class="keywords">AWS</span> 
+				<span class="keywords">Serverless Framework</span> 
+				<span class="keywords">AWS CloudFormation</span> 
+				<span class="keywords">AWS CDK</span> 
+				<span class="keywords">Terraform</span> 
+				<span class="keywords">Google Cloud Platform</span> 
+				</section>
+				<section>
+				<h3 class="skills">AWS Services</h3>
+				<span class="keywords">EC2</span> 
+				<span class="keywords">Lambda</span> 
+				<span class="keywords">Step Functions</span> 
+				<span class="keywords">EventBridge</span> 
+				<span class="keywords">S3</span> 
+				<span class="keywords">RDS</span> 
+				<span class="keywords">DynamoDB</span> 
+				<span class="keywords">Athena</span> 
+				<span class="keywords">API Gateway</span> 
+				<span class="keywords">SQS</span> 
+				<span class="keywords">SNS</span> 
+				<span class="keywords">VPC</span> 
+				<span class="keywords">Route 53</span> 
+				<span class="keywords">IAM</span> 
+				<span class="keywords">Secrets Manager</span> 
+				<span class="keywords">CloudWatch</span> 
+				</section>
+				<section>
+				<h3 class="skills">Web Development</h3>
+				<span class="keywords">RESTful APIs</span> 
+				<span class="keywords">GraphQL</span> 
+				<span class="keywords">HTML</span> 
+				<span class="keywords">CSS</span> 
+				<span class="keywords">Typescript</span> 
+				<span class="keywords">Node.js</span> 
+				<span class="keywords">React</span> 
+				</section>
+				<section>
+				<h3 class="skills">Databases</h3>
+				<span class="keywords">PostgreSQL</span> 
+				<span class="keywords">SQL Server</span> 
+				<span class="keywords">MySQL</span> 
+				<span class="keywords">DynamoDB</span> 
+				<span class="keywords">DuckDB</span> 
+				</section>
+				<section>
+				<h3 class="skills">Containerization &amp; CI/CD</h3>
+				<span class="keywords">Docker</span> 
+				<span class="keywords">GitHub Actions</span> 
+				<span class="keywords">GitLab CI</span> 
+				</section>
+				<section>
+				<h3 class="skills">Developer Tools &amp; Monitoring</h3>
+				<span class="keywords">Git (Gitlab, GitHub)</span> 
+				<span class="keywords">Grafana</span> 
+				<span class="keywords">Lumigo</span> 
+				</section>
+				<section>
+				<h3 class="skills">Operating Systems</h3>
+				<span class="keywords">Linux (Ubuntu, Debian)</span> 
+				<span class="keywords">macOS</span> 
+				<span class="keywords">Windows</span> 
+				<span class="keywords">TrueNAS</span> 
+				</section>
+				</section>
+			</section>
+			<section id="education">
+				<h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
+				<h3>Bachelor of Science, Computer Science - California State University, Fullerton</h3>
+				<h4>2013-Aug  - 2017-May  
+				</h4>
+				<h4>COURSES</h4>
+				<ul class="courses">
+					<li>Graduated Cum Laude</li>
+					<li>Dean&#x27;s List (All Semesters)</li>
+					<li>Key Coursework: Data Structures &amp; Algorithms, Operating Systems, Database Systems, Software Engineering</li>
+				</ul>
+				 
+			</section>
+		</div>
+	</body>
+<script>
+    // Get the current page's URL dynamically
+    const pageUrl = window.location.href;
+
+    // Set the static subject text and combine it with the URL
+    const subjectText = "Resume Inquiry for Micah Madru";
+    const recommendedSubject = subjectText + " [" + pageUrl + "]";
+
+    // URL-encode the entire subject string
+    const encodedSubject = encodeURIComponent(recommendedSubject);
+
+    // This runs when the page is fully loaded
+    window.addEventListener('load', function() {
+        // Find all links that use the mailto: or tel: protocols
+        document.querySelectorAll('a[href^="mailto:"], a[href^="tel:"]').forEach(function(link) {
+            let originalHref = link.getAttribute('href');
+
+            // --- Add Google Analytics event tracking ---
+            link.addEventListener('click', function() {
+                if (originalHref.startsWith("mailto:")) {
+                    gtag('event', 'email_click', {
+                        'event_category': 'Contact',
+                        'event_label': originalHref
+                    });
+                } else if (originalHref.startsWith("tel:")) {
+                    gtag('event', 'tel_click', {
+                        'event_category': 'Contact',
+                        'event_label': originalHref
+                    });
+                }
+            });
+
+            // --- Mailto subject modification ---
+            if (originalHref.startsWith("mailto:")) {
+                // Check if the subject is not already present
+                if (!originalHref.includes("subject=")) {
+                    // Add the new subject to the existing href
+                    const newHref = originalHref + "?subject=" + encodedSubject;
+                    link.setAttribute('href', newHref);
+                }
+            }
+        });
+    });
+</script>
+</html>
